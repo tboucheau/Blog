@@ -1,4 +1,7 @@
 # Planifier notre application
+
+_J'ai effectué ce projet en me basant sur les vidéos de [Mackenzie Child](mackenziechild.me) et plus précisement sur sa série de 22 vidéos sur sa chaine Youtube sur {"comment créer un blog & un portfolio"](https://www.youtube.com/playlist?list=PL23ZvcdS3XPK9Y4DRU-BiJtiY5L_QhUUq). Ces vidéos sont simples, claires, et très bien expliquées. Je vous les conseil vivement !_
+
 1. Questions
 	- Qu'allons nous créer comme application ?
 	- Pour qui allons nous créer cette application ?
@@ -32,7 +35,7 @@ Nous créons cette application pour nous, mais aussi pour la communautée. Le pa
 	- User (Devise)
 
 ## Cas d'utilisations
-En tant que <=>, je souhaite être capable de <=>, pour que <=>.
+En tant que **<=>**, je souhaite être capable de **<=>**, pour que **<=>**.
 - En tant qu'utilisateur, je souhaite être capable de créer des posts, pour partager ce que j'ai appris sur mon blog.
 - En tant qu'utilisateur, je souhaite être capable d'éditer et supprimer des posts, pour qie je puisse gérer le blog.
 - En tant qu'utilisateur, je souhaite être capable d'écrire les posts en Markdown, pour que ce soit plus facile à écrire et mettre en page.
@@ -45,7 +48,7 @@ En tant que <=>, je souhaite être capable de <=>, pour que <=>.
 
 **Post**
 	title:string
-	content:string
+	content:test
 	header_picture (digineo/has_images)
 	pictures (digineo/has_images)
 
