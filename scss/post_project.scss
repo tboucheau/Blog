@@ -27,6 +27,57 @@
         }
     }
 }
+// --------------------- Posts show
+#posts_show_wrapper {
+    padding-top: 1em;
+    text-align: center;
+    .date {
+        font-size: .9em;
+        color: $light;
+        margin: 0;
+    }
+    h1 {
+        margin: 0;
+        font-size: 2em;
+        text-transform: uppercase;
+         a {
+           text-decoration: none;
+           color: $dark;
+        }
+    }
+    hr {
+        margin: 3em auto;
+    }
+
+    #content {
+        h2 {
+            text-align: justify;
+        }
+        p {
+            text-align: justify;
+        }
+    }
+
+    #share_box {
+        text-align: center
+        p {
+            padding: 0 0 1em 0;
+            margin: 0;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $dark;
+            font-size: .8em;
+        }
+        i {
+            color: $dark;
+            padding: 1em 1.5em;
+            &:hover {
+                color: $highlight;
+                cursor: pointer;
+            }
+        }
+    }
+}
 
 // ------------------- Pagination
 .pagination:before,
