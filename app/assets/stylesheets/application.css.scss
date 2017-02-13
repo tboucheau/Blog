@@ -38,6 +38,10 @@ body {
     clear: both;
 }
 
+.hidden {
+  display: none;
+}
+
 h1, h2, h3, h4, h5, h6, p, ul, li {
     color: $dark;
 }
@@ -124,7 +128,7 @@ hr {
     .title_header_center {
         margin: 0 44%;
         padding: 0;
-        font-size: 2rem;
+        font-size: 1.28rem;
     }
 }
 
