@@ -21,7 +21,7 @@
               <div class="text">
                   <h3><%= link_to post.title, post %></h3>
                   <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
-                  <p class="resume"><%= post.content.truncate(25) %></p>
+                  <p class="resume"><%= markdown post.content.truncate(25) %></p>
               </div>
           </div>
         <% end %>
