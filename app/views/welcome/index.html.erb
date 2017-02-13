@@ -1,0 +1,67 @@
+<div class="wrapper wrapper_padding clearfix">
+    <div class="col-1 homepage_content about">
+        <h2>About</h2>
+        <hr>
+        <div class="image_header_about">
+            <img src="http://lorempicsum.com/futurama/150/150/1" alt="image_about">
+        </div>
+        <br>
+        <p>Je suis en train de me former pour devenir developpeur Ruby on Rails full stack.</p>
+        <p>En ce moment, je me forme en suivant différents cours en ligne (OpenClassRooms, Grafikart, LeWagon, MackenzieChild...).</p>
+        <p>Vous pouvez suivre mon travail sur ce blog ou encore sur mon <a href="#">Github</a>.</p>
+    </div>
+    <div class="col-2 homepage_content">
+        <h2>Mes écrits</h2>
+        <hr>
+        <% @posts.each do |post| %>
+          <div class="box">
+              <div class="image_header">
+                  <img src="https://unsplash.it/150/150?image=4" alt="image_blog">
+              </div>
+              <div class="text">
+                  <h3><%= link_to post.title, post %></h3>
+                  <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+                  <p class="resume"><%= post.content.truncate(25) %></p>
+              </div>
+          </div>
+        <% end %>
+        <br>
+        <%= link_to "Voir tous les articles", posts_path %>
+    </div>
+    <div class="col-3 homepage_content">
+        <h2>Mes projets</h2>
+        <hr>
+        <div class="box">
+            <div class="image_header">
+                <img src="https://unsplash.it/150/150?image=10" alt="image_about">
+            </div>
+            <div class="text">
+                <h3><a href="#">Ce Blog</a></h3>
+                <p class="date">Jeudi 9 Fevrier 2017, 20h50</p>
+                <p class="resume">bla bla bla</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image_header">
+                <img src="https://unsplash.it/150/150?image=7" alt="image_about">
+            </div>
+            <div class="text">
+                <h3><a href="#">Un container pour ce blog</a></h3>
+                <p class="date">Jeudi 9 Fevrier 2017, 20h50</p>
+                <p class="resume">bla bla bla</p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image_header">
+                <img src="https://unsplash.it/150/150?image=8" alt="image_about">
+            </div>
+            <div class="text">
+                <h3><a href="#">App de gestion d'annonces</a></h3>
+                <p class="date">Jeudi 9 Fevrier 2017, 20h50</p>
+                <p class="resume">bla bla bla</p>
+            </div>
+        </div>
+    <br>
+    <a href="#">Voir tous les projets</a>
+    </div>
+</div>

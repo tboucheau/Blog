@@ -17,6 +17,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    border: 1px solid $white;
     &:hover {
         border: 1px solid $highlight;
         border-radius: 5px;
