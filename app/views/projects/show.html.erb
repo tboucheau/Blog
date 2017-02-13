@@ -1,0 +1,18 @@
+<div id="posts_show_wrapper" class="skinny_wrapper">
+    <div class="post_informatique">
+        <p class="date"><%= @project.created_at.strftime("%e %b %Y %H:%M:%S") %></p>
+        <img src="https://unsplash.it/600/250?image=1024" alt="image_blog">
+        <h1><%= @project.title %></h1>
+        <hr>
+    </div>
+
+    <div id="content">
+        <%= markdown @project.description %>
+        <div class="button_wrapper">
+          <a href="<%= @project.link %>" class="project_button" target="_blank">Visitez <%= @project.title %></a>
+        </div>
+    </div>
+</div>
+
+<%= link_to "Edit", edit_project_path(@project) %>
+<%= link_to "Supprimer", project_path(@project), method: :delete, data: {confirm: "es-tu sur ?"} %>

@@ -1,0 +1,17 @@
+<div id="page_title">
+    <h1 class="title_header_center">Mes Projets</h1>
+</div>
+</div>
+<div id="posts_wrapper">
+    <% @projects.each do |project| %>
+      <div class="posts_projects">
+        <img src="https://unsplash.it/400/150?image=1024" alt="image_blog">
+        <p class="date"><%= project.created_at.strftime("%e %b %Y %H:%M:%S") %></p>
+        <h2><%= link_to project.title, project %></h2>
+        <div class="resume"><%= project.description.truncate(25) %></div>
+        <hr>
+      </div>
+    <% end %>
+
+  </div>
+  <%= will_paginate @project %>
