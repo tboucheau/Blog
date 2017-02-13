@@ -1,1 +1,49 @@
-<h1>hello world!</h1>
+<div id="page_title">
+    <div class="title_header">Mes écrits sur l'informatique</div>
+    <div class="title_header">Mes tutos / astuces</div>
+    <div class="title_header">Mes pensées générales</div>
+</div>
+<div id="posts_wrapper">
+    <div class="post_informatique">
+      <% @posts.each do |post| %>
+        <img src="https://unsplash.it/400/150?image=1024" alt="image_blog">
+        <p class="date"><%= post.created_at.strftime("%e %b %Y %H:%M:%S%p") %></p>
+        <h2><%= link_to post.title, post %></h2>
+        <div class="resume"><%= post.content.truncate(25) %></div>
+        <hr>
+      <% end %>
+    </div>
+
+    <div class="post_tuto">
+        <img src="https://unsplash.it/400/150?image=32" alt="image_blog">
+        <p class="date">Jeudi 9 Fevrier 2017, 20h50</p>
+        <h2><a href="#">Comment créer un blog</a></h2>
+        <p class="resume">bla bla bla</p>
+        <hr>
+        <img src="https://unsplash.it/400/150?image=1024" alt="image_blog">
+        <p class="date">Jeudi 9 Fevrier 2017, 20h50</p>
+        <h2><a href="#">Comment créer un blog</a></h2>
+        <p class="resume">bla bla bla</p>
+        <hr>
+    </div>
+
+    <div class="post_pensees">
+        <img src="https://unsplash.it/400/150?image=28" alt="image_blog">
+        <p class="date">Jeudi 9 Fevrier 2017, 20h50</p>
+        <h2><a href="#">Comment créer un blog</a></h2>
+        <p class="resume">bla bla bla</p>
+        <hr>
+        <img src="https://unsplash.it/400/150?image=1024" alt="image_blog">
+        <p class="date">Jeudi 9 Fevrier 2017, 20h50</p>
+        <h2><a href="#">Comment créer un blog</a></h2>
+        <p class="resume">bla bla bla</p>
+        <hr>
+    </div>
+</div>
+
+<div class="pagination">
+    <span class="previous_page disabled">Previous page</span>
+    <em class="current">1</em>
+    <a href="#" rel="next">2</a>
+    <a href="#" class="next_page">Next page</a>
+</div>
