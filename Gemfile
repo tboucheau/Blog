@@ -15,6 +15,8 @@ gem 'redcarpet', '~> 3.4'
 gem 'friendly_id', '~> 5.1'
 gem 'will_paginate', '~> 3.1'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
+gem 'devise', '~> 4.2'
+gem 'devise-encryptable'
 
 group :development, :test do
   gem 'byebug', platform: :mri
