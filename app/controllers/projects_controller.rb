@@ -20,6 +20,21 @@ class ProjectsController < ApplicationController
   def show
   end
 
+  def edit
+  end
+
+  def update
+    if @project.update project_params
+      redirect_to @project, notice: "Nickel, le projet a été mis à jour !"
+    else
+      render 'edit', notice: "Whoops, le projet n'a pas été mis à jour !"
+    end
+  end
+
+  def destroy
+    @project.destroy
+    redirect_to projects_path
+  end
   private
 
   def project_params

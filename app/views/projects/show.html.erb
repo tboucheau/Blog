@@ -15,3 +15,4 @@
 </div>
 
 <%= link_to "Edit", edit_project_path(@project) %>
+<%= link_to "Supprimer", project_path(@project), method: :delete, data: {confirm: "es-tu sur ?"} %>
