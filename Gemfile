@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.3.3'
+ruby '2.3.0'
 
 gem 'rails', '~> 5.0.1'
 gem 'puma', '~> 3.0'
@@ -16,7 +16,6 @@ gem 'friendly_id', '~> 5.1'
 gem 'will_paginate', '~> 3.1'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'devise', '~> 4.2'
-gem 'devise-encryptable'
 
 group :development, :test do
   gem 'byebug', platform: :mri
