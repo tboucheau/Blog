@@ -14,5 +14,10 @@
     </div>
 </div>
 
-<%= link_to "Edit", edit_project_path(@project) %>
-<%= link_to "Supprimer", project_path(@project), method: :delete, data: {confirm: "es-tu sur ?"} %>
+<div id="admin_links>
+        <% if user_signed_in? %>
+                <%= link_to "Editer le projet", edit_project_path(@project) %>
+                <%= link_to "Supprimer le projet", project_path(@project), method: :delete, data: {confirm: "Es-tu sur?"} %>
+        <% end %>
+        </div>
+<hr>
