@@ -9,28 +9,28 @@
     <div id="content">
         <%= markdown @post.content %>
     </div>
-	
 
-	<div id="admin_links>
+
+
 	<% if user_signed_in? %>
-		<%= link_to "Editer l'article", edit_post_path(@post) %>
-		<%= link_to "Supprimer l'article", post_path(@post), method: :delete, data: {confirm: "Es-tu sur?"} %>
-	<% end %>
-	</div>
-<div id="share_box">
-        <hr>
-        <p>Partager : <%= @post.title %></p>
-        <a onclick="javascript:window.open('https://www.twitter.com/intent/tweet?text=<%= @post.title %>  par @TonyBoucheau - &amp;url=<%= post_url %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
-          <i class="fa fa-twitter"></i>
-        </a>
-        <a onclick="javascript:window.open('https://www.facebook.com/sharer.php?u=<%= post_url %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
-          <i class="fa fa-facebook"></i>
-        </a>
-        <a onclick="javascript:window.open('https://plus.google.com/share?url=<%= post_url %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
-          <i class="fa fa-google-plus"></i>
-        </a>
-        <hr>
+    <div id="admin_links">
+    	<%= link_to "Editer l'article", edit_post_path(@post) %>
+		  <%= link_to "Supprimer l'article", post_path(@post), method: :delete, data: {confirm: "Es-tu sur?"} %>
     </div>
-    <%= render 'disqus' %>
+	<% end %>
+  <div id="share_box">
+    <hr>
+    <p>Partager : <%= @post.title %></p>
+    <a onclick="javascript:window.open('https://www.twitter.com/intent/tweet?text=<%= @post.title %>  par @TonyBoucheau - &amp;url=<%= post_url %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
+      <i class="fa fa-twitter"></i>
+    </a>
+    <a onclick="javascript:window.open('https://www.facebook.com/sharer.php?u=<%= post_url %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
+      <i class="fa fa-facebook"></i>
+    </a>
+    <a onclick="javascript:window.open('https://plus.google.com/share?url=<%= post_url %>', '_blank', 'width=800, height=500, top=200, left=300');void(0);">
+      <i class="fa fa-google-plus"></i>
+    </a>
+    <hr>
+  </div>
+  <%= render 'disqus' %>
 </div>
-
