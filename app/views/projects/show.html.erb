@@ -1,23 +1,23 @@
 <div id="posts_show_wrapper" class="skinny_wrapper">
-    <div class="post_informatique">
-        <p class="date"><%= @project.created_at.strftime("%e %b %Y %H:%M:%S") %></p>
-        <img src="https://unsplash.it/600/250?image=1024" alt="image_blog">
-        <h1><%= @project.title %></h1>
-        <hr>
-    </div>
+  <div class="post_informatique">
+    <p class="date"><%= @project.created_at.strftime("%e %b %Y %H:%M:%S") %></p>
+    <img src="https://unsplash.it/600/250?image=1024" alt="image_blog">
+    <h1><%= @project.title %></h1>
+    <hr>
+  </div>
 
-    <div id="content">
-        <%= markdown @project.description %>
-        <div class="button_wrapper">
-          <a href="<%= @project.link %>" class="project_button" target="_blank">Visitez <%= @project.title %></a>
-        </div>
-    </div>
+  <div id="content">
+    <%= markdown @project.description %>
+      <div class="button_wrapper">
+        <a href="<%= @project.link %>" class="project_button" target="_blank">Visitez <%= @project.title %></a>
+      </div>
+  </div>
 </div>
 
-<div id="admin_links>
-        <% if user_signed_in? %>
-                <%= link_to "Editer le projet", edit_project_path(@project) %>
-                <%= link_to "Supprimer le projet", project_path(@project), method: :delete, data: {confirm: "Es-tu sur?"} %>
-        <% end %>
-        </div>
+<% if user_signed_in? %>
+  <div id="admin_links">
+    <%= link_to "Editer le projet", edit_project_path(@project) %>
+    <%= link_to "Supprimer le projet", project_path(@project), method: :delete, data: {confirm: "Es-tu sur?"} %>
+  </div>
+  <% end %>
 <hr>

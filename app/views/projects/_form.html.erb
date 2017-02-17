@@ -1,9 +1,9 @@
 <%= form_for @project do |f| %>
   <% if @project.errors.any? %>
-    <h2><%= pluralize(@project.errors.count, "erreur") %> ont empêcher le project d'être sauvegardé :</h2>
+    <h2><%= pluralize(@project.errors.count, "erreur") %> ont empêché le project d'être sauvegardé :</h2>
     <ul>
       <% @project.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
+        <li><%= msg %></li>
       <% end %>
     </ul>
   <% end %>
@@ -25,4 +25,6 @@
   <br>
   <br>
   <%= f.submit %>
+  <br>
+  <br>
 <% end %>
