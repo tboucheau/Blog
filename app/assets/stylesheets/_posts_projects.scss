@@ -2,34 +2,11 @@
     padding-top: 1em;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    .post_informatique, .post_tuto, .post_pensees {
-        text-align: center;
-        padding: 1em 2em;
-        .date {
-            font-size: .9em;
-            margin: 0;
-        }
-        h2 {
-            margin: 0;
-            font-size: 2em;
-            text-transform: uppercase;
-            a {
-                text-decoration: none;
-                color: $dark;
-                &:hover {
-                    color: $highlight;
-                }
-            }
-        }
-        hr {
-            margin: 1.5em auto;
-        }
-    }
-    .posts_projects {
+    justify-content: space-around;
+    .post {
+      min-width: 445px;
       text-align: center;
-      margin: 0 95px 0 95px;
-      padding: 1em 2em;
+      padding: 1em 0;
       .date {
           font-size: .9em;
           margin: 0;

@@ -1,39 +1,16 @@
 <div id="page_title">
-  <div class="title_header">Mes écrits sur l'informatique</div>
-  <div class="title_header">Mes tutos / astuces</div>
-  <div class="title_header">Mes pensées générales</div>
+  <h1 class="title_header_center">Mes articles</h1>
 </div>
+
 <div id="posts_wrapper">
-  <div class="post_informatique">
-    <% @posts.each do |post| %>
+  <% @posts.each do |post| %>
+    <div class="post">
       <p class="date"><%= post.created_at.strftime("%e %b %Y %H:%M:%S") %></p>
       <h2><%= link_to post.title.truncate(25), post %></h2>
       <div class="resume"><%= post.content.truncate(25) %></div>
       <hr>
-    <% end %>
-  </div>
-
-  <div class="post_tuto">
-    <p class="date">Jeudi 9 Fevrier 2017, 20h50</p>
-    <h2><a href="#">Comment créer un blog</a></h2>
-    <p class="resume">bla bla bla</p>
-    <hr>
-    <p class="date">Jeudi 9 Fevrier 2017, 20h50</p>
-    <h2><a href="#">Comment créer un blog</a></h2>
-    <p class="resume">bla bla bla</p>
-    <hr>
-  </div>
-
-  <div class="post_pensees">
-    <p class="date">Jeudi 9 Fevrier 2017, 20h50</p>
-    <h2><a href="#">Comment créer un blog</a></h2>
-    <p class="resume">bla bla bla</p>
-    <hr>
-    <p class="date">Jeudi 9 Fevrier 2017, 20h50</p>
-    <h2><a href="#">Comment créer un blog</a></h2>
-    <p class="resume">bla bla bla</p>
-    <hr>
-  </div>
+    </div>
+  <% end %>
 </div>
 
 <%= will_paginate @post %>
