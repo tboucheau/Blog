@@ -10,12 +10,15 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
+
+# Gem ajoutées pour le blog
 gem 'pygments.rb', '~> 0.6.3'
 gem 'redcarpet', '~> 3.4'
 gem 'friendly_id', '~> 5.1'
 gem 'will_paginate', '~> 3.1'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'devise', '~> 4.2'
+
 
 group :development, :test do
   gem 'byebug', platform: :mri
@@ -30,6 +33,3 @@ group :production do
   gem 'pg'
   gem 'rails_12factor'
 end
-
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
