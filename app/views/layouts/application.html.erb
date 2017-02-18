@@ -14,33 +14,32 @@
 
   <body>
     <header id="main_navigation" class="clearfix">
-        <%= link_to "Tony Boucheau", root_path, class: "name" %>
-        <nav>
-            <%= link_to "Articles", posts_path %>
-            <%= link_to "Projets", projects_path %>
-            <%= link_to "Contact", new_contact_path %>
-	<% if user_signed_in? %>
-		<%= link_to "Se deconnecter", destroy_user_session_path, method: :delete %>
-	<% end %>
-        </nav>
+      <%= link_to "Tony Boucheau", root_path, class: "name" %>
+      <nav>
+        <%= link_to "Articles", posts_path %>
+        <%= link_to "Projets", projects_path %>
+        <%= link_to "Contact", new_contact_path %>
+	      <% if user_signed_in? %>
+		      <%= link_to "Se deconnecter", destroy_user_session_path, method: :delete %>
+	      <% end %>
+      </nav>
     </header>
-    
-  <% if notice %>
-    <p class="notice"><%= notice %></p>
-  <% elsif alert %>
-    <p class="alert"><%= alert %></p>
-  <% end %>
+
+    <% if notice %>
+      <p class="notice"><%= notice %></p>
+    <% elsif alert %>
+      <p class="alert"><%= alert %></p>
+    <% end %>
 
     <%= yield %>
 
-
     <footer id="main_footer">
-        <p class="copyright">&copy; Tony BOUCHEAU</p>
-        <nav>
-            <a href="https://twitter.com/tonyboucheau" target="_blank"><i class="fa fa-twitter"></i></a>
-            <a href="https://github.com/tboucheau/" target="_blank"><i class="fa fa-github"></i></a>
-            <a href="https://www.facebook.com/tony.boucheau" target="_blank"><i class="fa fa-facebook"></i></a>
-        </nav>
+      <p class="copyright">&copy; Tony BOUCHEAU</p>
+      <nav>
+        <a href="https://twitter.com/tonyboucheau" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://github.com/tboucheau/" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://www.facebook.com/tony.boucheau" target="_blank"><i class="fa fa-facebook"></i></a>
+      </nav>
     </footer>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
