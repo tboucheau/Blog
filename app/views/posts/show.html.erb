@@ -6,7 +6,9 @@
   </div>
 
   <div id="content">
-    <%= markdown @post.content %>
+    <div class="fr-view">
+      <%= sanitize @post.content %>
+    </div>
   </div>
 
 	<% if user_signed_in? %>
