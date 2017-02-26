@@ -23,11 +23,11 @@ Nous créons cette application pour nous, mais aussi pour la communauté. Le par
 3. De quelles fonctionnalités allons nous avoir besoin ?
 	- Posts
 		- CRUD
-		- Markdown
-		- Syntax highlighting
+		- Markdown / Syntax highlighting (Pour le moment seulement sur les projets, sur les posts, c'est l'[éditeur wysiwyg Froala](https://www.froala.com/wysiwyg-editor))
 		- Commentaires (avec Disqus)
 	- Projects
 		- CRUD
+		- Markdown / Syntax highlighting
 	- Contact
 		- Formulaire de Contact
 		- Sendgrid (si production sur Heroku - [dans mon cas, c'est ici](https://stark-springs-19065.herokuapp.com))
@@ -106,3 +106,6 @@ Vous devriez voir la sortie suivante sur votre terminal :
 		   b068051..2b0482c  master -> master
 	</code>
 </pre>
+
+# Application en production
+![Capture](Capture.JPG)
