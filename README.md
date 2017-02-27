@@ -23,7 +23,7 @@ Nous créons cette application pour nous, mais aussi pour la communauté. Le par
 3. De quelles fonctionnalités allons nous avoir besoin ?
 	- Posts
 		- CRUD
-		- Markdown / Syntax highlighting (Pour le moment seulement sur les projets, sur les posts, c'est l'[éditeur wysiwyg Froala](https://www.froala.com/wysiwyg-editor))
+		- Markdown / Syntax highlighting (Pour le moment seulement sur les projets, sur les posts, c'est l'[éditeur wysiwyg Bootsy](https://github.com/volmer/bootsy))
 		- Commentaires (avec Disqus)
 	- Projects
 		- CRUD
@@ -107,5 +107,13 @@ Vous devriez voir la sortie suivante sur votre terminal :
 	</code>
 </pre>
 
-# Application en production
+#ToDo
+- Refonte du style suite à l'ajout de Bootsy il y a des bugs
+- Ajout de Bootsy sur les projets
+- Ajout d'un module d'administration
+- Ajout d'une gestion dynamique de la page d'accueil (section "about")
+
+## Application en production
+(à retrouver [ici](https://stark-springs-19065.herokuapp.com/))
 ![Capture](Capture.JPG)
+![Capture-bootsy](CaptureBootsy.JPG)
