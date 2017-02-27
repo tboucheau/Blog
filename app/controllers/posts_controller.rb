@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  
+
   before_action :find_post, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
 
@@ -43,7 +43,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:title, :content, :slug)
+    params.require(:post).permit(:title, :content, :slug, :bootsy_image_gallery_id)
   end
 
   def find_post

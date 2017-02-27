@@ -18,10 +18,10 @@ gem 'friendly_id', '~> 5.1'
 gem 'will_paginate', '~> 3.1'
 gem 'mail_form', '~> 1.5', '>= 1.5.1'
 gem 'devise', '~> 4.2'
-gem 'wysiwyg-rails'
+gem 'bootsy'
 gem 'font-awesome-rails'
 gem 'sanitize'
-
+gem 'bootstrap-sass', '~> 3.3.6'
 
 group :development, :test do
   gem 'byebug', platform: :mri

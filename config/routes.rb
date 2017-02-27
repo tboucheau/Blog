@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
   get 'welcome/index'
   root 'welcome#index'
+  mount Bootsy::Engine => '/bootsy', as: 'bootsy'
   get '*path' => redirect('/')
 end
