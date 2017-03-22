@@ -86,7 +86,7 @@ h6 {
     font-size: 1rem;
 }
 p, li {
-    font-size: 1.1rem;
+    font-size: 1.1em;
     line-height: 1.75;
 }
 
@@ -95,7 +95,7 @@ p, ul, ol {
 }
 
 hr {
-    width: 3em;
+    width: 60%;
     display: block;
     height: 2px;
     border: 0;
@@ -126,7 +126,7 @@ hr {
       color: $dark;
       text-decoration: none;
       margin: 0 1rem;
-      font-size: 1rem;
+      font-size: 1em;
       &:hover {
           color: $highlight;
       }
@@ -153,24 +153,25 @@ hr {
 
 
 #main_footer {
-    padding: 2.4em 5%;
-    border-top: 1px solid $border;
-    .copyright {
-        float: left;
-        font-size: .9em;
-        margin: 0;
-    }
-    nav {
-        float: right;
-        a, i {
-            color: $dark;
-            margin-left: 1em;
-            padding-top: .2em;
-            &:hover {
-                color: $highlight;
-            }
-        }
-    }
+  margin-top: 7em;
+  padding: 2.4em 5%;
+  border-top: 1px solid $border;
+  .copyright {
+      float: left;
+      font-size: .9em;
+      margin: 0;
+  }
+  nav {
+      float: right;
+      a, i {
+          color: $dark;
+          margin-left: 1em;
+          padding-top: .2em;
+          &:hover {
+              color: $highlight;
+          }
+      }
+  }
 }
 
 input[type="text"], input[type="email"], input[type="password"], textarea {
